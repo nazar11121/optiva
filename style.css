@@ -1,30 +1,36 @@
 body {
     font-family: sans-serif;
 }
-h1{
-    
-    margin-left: 50px;
-    color: white;
-    margin-top: 30px;
-   border-bottom: double 10px #D9D9D9 ;
-   margin: 10px 0;
-    opacity: 0; 
-    transform: translateY(-20px); 
-    animation: slideIn 0.5s forwards; 
-    animation-delay: 0.2s; 
-    
+header {
+    display: flex; /* Використовуємо flexbox */
+    justify-content: space-between; /* Вирівнює елементи по краях */
+    align-items: center; /* Центрує елементи по вертикалі */
+    padding: 20px; /* Відступи навколо */
+    background-color: #524F4F; /* Фон заголовка */
 }
 
-header{
-    background-color: #524F4F ;
-
+h1 {
+    margin: 0; /* Прибираємо відступи */
+    color: white; /* Колір тексту заголовка */
 }
-.rt{
-    width: 100px;
-    height: 100px;
-    margin-left: 600px;
-    margin-top: 20px;
-   
+
+nav {
+    margin-left: 20px; /* Відступ для навігації */
+}
+
+nav a {
+    margin-left: 20px; /* Відступи між посиланнями */
+    color: #D9D9D9; /* Колір тексту */
+    text-decoration: none; /* Без підкреслення */
+}
+
+nav a:hover {
+    color: white; /* Колір при наведенні */
+}
+
+.rt {
+    width: 100px; /* Ширина логотипа */
+    height: auto; /* Автоматична висота */
 }
 a{
     background-color: #D9D9D9;
@@ -33,7 +39,8 @@ a{
     color: black;
     padding: 5px;
     margin-left:60px ;
-    
+    width: 100px;
+    height: auto; 
    
     
 }
@@ -47,6 +54,8 @@ h2{
 nav{
     position: absolute;
     top: 100px;
+    display: flex;
+    
 }
 a:hover{
    color:white ;
@@ -227,6 +236,8 @@ header {
     transform: scale(0.9); 
     animation: scaleIn 0.5s forwards; 
     animation-delay: 0.4s;
+   
+    
 }
 
 nav {
@@ -334,5 +345,3 @@ nav a:hover {
     height: 500px;
     border: double 5px #333;
 }
-
-
